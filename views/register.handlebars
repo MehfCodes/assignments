@@ -1,0 +1,61 @@
+<div class="errors">
+    {{#each messages}}
+    <p class="error">{{this}}</p>
+    {{/each}}
+</div>
+<div class="auth">
+    <!-- {{#if messages}} -->
+
+    <!-- {{/if}} -->
+    {{#if body}}
+    <div class="register-container">
+        <h3>Create Account</h3>
+        <form autocomplete="off" action="/register" method="POST">
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="text" name="email" value={{body.email}}>
+            </div>
+            <div class="input-container">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" value={{body.firstname}}>
+            </div>
+            <div class="input-container">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" value={{body.lastname}}>
+            </div>
+
+            <div class="input-container password">
+                <label for="password">Password</label>
+                <input type="text" name="password" value={{body.password}}>
+            </div>
+            <button type="submit" class="form-register-btn">SIGN UP</button>
+        </form>
+    </div>
+</div>
+{{else}}
+<div class="register-container">
+    <h3>Create Account</h3>
+    <form autocomplete="off" action="/register" method="POST">
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+        </div>
+        <div class="input-container">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" />
+        </div>
+        <div class="input-container">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" />
+        </div>
+
+        <div class="input-container password">
+            <label for="password">Password</label>
+            <input type="text" name="password" />
+        </div>
+        <button type="submit" class="form-register-btn">SIGN UP</button>
+    </form>
+</div>
+</div>
+
+{{/if}}

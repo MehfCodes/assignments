@@ -1,0 +1,38 @@
+<div class="container">
+    <form action="/admin/edit-package/{{id}}" method="POST" style="margin-top: 100px;" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Package Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Package Name" name="name"
+                value={{name}}>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" id="price" placeholder="Price" name="price" value={{price}}>
+        </div>
+
+
+        <div class="form-group">
+            <label for="number">number</label>
+            <input type="text" class="form-control" id="number" placeholder="The number of meals inside the package"
+                name="number" value={{number}}>
+        </div>
+        <div class="form-group">
+            <label for="category">category</label>
+            <input type="text" class="form-control" id="category" placeholder="Category" name="category"
+                value={{category}}>
+        </div>
+        <div class="custom-file">
+            <div class="form-group">
+                <label for="image" class="custom-file-label">Choose image</label>
+                <input type="file" class="form-control-file" id="image" placeholder="image" name="package-img">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="describe">describe</label>
+            <textarea class="form-control" id="describe" placeholder="Description or details" name="describe"
+                rows="12">{{describe}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,113 @@
+<div class="packages-container">
+    {{#each packages}}
+    <div class="packages-item">
+        <img src="/images/{{this.imgSrc}}" />
+        <h3>{{this.name}}</h3>
+        <p class="packages-describe">{{this.describe}}</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">choose my meals</a></button>
+        <h4> Number : {{this.number}}</h4>
+        <span class="packages-price"> from <b>${{this.price}}</b></span>
+    </div>
+    {{/each}}
+    <div class="packages-item">
+        <img src="/images/weight-lose.jpg" />
+        <h3>Weight Loss</h3>
+        <p class="packages-describe">High protein, low-calorie meals with a nutrient profile tuned for weight loss</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">choose my meals</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price"> from <b>$145</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/muscle-gain.jpg" />
+        <h3>Muscle Gain</h3>
+        <p class="packages-describe">Higher protein and calorie portions to support your muscle gain momentum</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">choose my meals</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$159</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/keto.jpg" />
+        <h3>Keto</h3>
+        <p class="packages-describe">High fat, low carb meals with moderate protein to achieve and sustain ketosis</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">choose my meals</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$159</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/fat-burner.jpg" />
+        <h3>Fat Burner</h3>
+        <p class="packages-describe">Low carb, nutrient-rich meals with fat-burning profiles to support fat loss</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">choose my meals</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$159</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/vegan.jpg" />
+        <h3>Vegan</h3>
+        <p class="packages-describe">A fully plant-based package featuring vegan meat and no animal products</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View package</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$159</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/veggie.jpg" />
+        <h3>Veggie</h3>
+        <p class="packages-describe">A vegetarian-friendly package with a natural and nutrient-rich approach</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View package</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$159</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/gluten-free.jpg" />
+        <h3>Gluten Free</h3>
+        <p class="packages-describe">A gluten-free package with the same balanced profile as our other packages</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View package</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$117</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/probiotic.jpg" />
+        <h3>Prebiotic Soup Cleanse</h3>
+        <p class="packages-describe">A protein-packed meal and two superb prebiotic soups per day for up to 14 days</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View package</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$129</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/vegan-soup.jpg" />
+        <h3>Vegan Soup Cleanse</h3>
+        <p class="packages-describe">A vegan, plant-based version of our bestselling Prebiotic Soup Cleanse</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View cleanse</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$129</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/keto-soup.jpg" />
+        <h3>Keto Soup Cleanse</h3>
+        <p class="packages-describe">A delicious Keto version of our bestselling Prebiotic Soup Cleanse</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View cleanse</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$129</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/organic-juice.jpg" />
+        <h3>Organic Juice Cleanse</h3>
+        <p class="packages-describe">Our nutrient-packed cleanser with meals & organic juice for up to 14 days</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View cleanse</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$105</b></span>
+    </div>
+    <div class="packages-item">
+        <img src="/images/value.jpg" />
+        <h3>Value</h3>
+        <p class="packages-describe">All of our bestselling Value meals in one package for even less</p>
+        <button class="packages-btn"><a href="/meal-packages/{{id}}">View cleanse</a></button>
+        <h4> Number : 12</h4>
+        <span class="packages-price">from <b>$96</b></span>
+    </div>
+
+</div>
+<div class="packages-footer">
+    <p class="packages-subheader">Want to see individual meals instead?</p>
+    <button class="packages-button">our full menu</button>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <a class="btn btn-primary text-white" role="button" href="/admin/data-clerk" style="margin-top: 100px">New
+        Package</a>
+</div>
+{{!-- style="margin-top: 50px;display:grid;grid-template-columns:auto auto auto auto;grid-column-gap:10px;grid-row-gap:20px;margin-bottom:50px" --}}
+<div class="container ">
+    <div class="row mb-5">
+        {{#each packages}}
+
+
+        <div class="col-lg-4 mt-5 col-md-6 col-sm-12 ">
+            <div class="card mx-auto" style="width: 17rem;">
+                <img class="card-img-top " src="/images/{{this.imgSrc}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.describe}}</p>
+                    <a href="/admin/edit-package/{{this._id}}" class="btn btn-primary" role="button"
+                        style="color: white;">Edit</a>
+                    <a href="/admin/delete-package/{{this._id}}" class="btn btn-danger" role="button"
+                        style="color: white;">Delete</a>
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+</div>

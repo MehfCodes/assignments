@@ -1,0 +1,143 @@
+.auth {
+    width: 70%;
+    height: 700px;
+    font-family: sans-serif;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.login-container {
+    width: 80%;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.849);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.register-container {
+    width: 80%;
+    height: 550px;
+    border: 1px solid rgba(128, 128, 128, 0.849);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 80px;
+}
+
+.login-container h3 {
+    width: 100%;
+    text-align: center;
+    color: #2d0010;
+    font-size: 20px;
+}
+
+.register-container h3 {
+    width: 100%;
+    text-align: center;
+    color: #2d0010;
+    font-size: 20px;
+}
+
+.login-container form {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.register-container form {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.input-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+
+
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    text-indent: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(151, 148, 148, 0.568);
+}
+
+.form-btn {
+    align-self: flex-start;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #e8015a;
+    background-color: #e8015a;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-register-btn {
+    align-self: flex-start;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #e8015a;
+    background-color: #e8015a;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.password label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.input-container label span {
+    font-size: 14px;
+    color: #e8015a;
+    font-style: italic;
+    font-weight: 400;
+}
+

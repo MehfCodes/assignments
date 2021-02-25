@@ -1,0 +1,42 @@
+<div class="wrapper">
+    <div id="left">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="title">
+        <div><a href="/">Home</a></div>
+    </div>
+</div>
+<nav class="app-navbar">
+    <div class="close">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="center">
+
+        <div class="nav-logo">
+            <a href="/" class="logo-link"><img src="/images/logo.png" alt="logo" id="logo"></a>
+        </div>
+        <div class="nav-items">
+            <a href="#" class="fake-links">By Goal</a>
+            <a href="#" class="fake-links">By Diet</a>
+            <a href="#" class="fake-links">By Meal</a>
+            <a href="#" class="fake-links">About Us</a>
+        </div>
+        <div class="nav-auth">
+            {{#if dataclerk}}
+            <a href="/admin/data-clerk" class="btn btn-success mr-2 text-white" role="button">Data Clerk</a>
+            {{/if}}
+            <br />
+            {{#if isAuth}}
+            <a href="/dashboard" class="btn btn-primary text-white " role="button">Dashboard</a>
+            {{else}}
+            <a href="/register" class="auth">Register</a>
+            <a href="/login" class="auth">Login</a>
+            {{/if}}
+
+        </div>
+    </div>
+</nav>

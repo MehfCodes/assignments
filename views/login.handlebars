@@ -1,0 +1,22 @@
+<div class="errors">
+    {{#each messages}}
+    <p class="error">{{this}}</p>
+    {{/each}}
+</div>
+<div class="auth">
+    <div class="login-container">
+        <h3>Login</h3>
+        <form autocomplete="off" action="/login" method="POST">
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="text" name="email" />
+            </div>
+            <div class="input-container password">
+                <label for="password">Password <span>Forgot your password?
+                    </span></label>
+                <input type="text" name="password" />
+            </div>
+            <button type="submit" class="form-btn">SIGN IN</button>
+        </form>
+    </div>
+</div>
